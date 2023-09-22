@@ -23,7 +23,18 @@ public class Animal {
     public String  movimiento() {
         return "desplazarse";
     }
-    public void totalPorTipo () {
+    public static String totalPorTipo () {
+        int cantMamifero=Mamifero.getListado().size();
+        int cantAve=Ave.getListado().size();;
+        int cantReptil=Reptil.getListado().size();;
+        int cantPez=Pez.getListado().size();;
+        int cantAnfibio=Anfibio.getListado().size();;
+
+        return "Mamiferos: "+cantMamifero+"\n"+
+                "Aves: "+cantAve+"\n"+
+                "Reptiles: "+cantReptil+"\n" +
+                "Peces: " +cantPez+"\n"+
+                "Anfibios: "+cantAnfibio;
 
 
     }
@@ -78,11 +89,11 @@ public class Animal {
         this.habitat = habitat;
     }
 
-    public ArrayList<Zona> getZona() {
+    public Zona getZona() {
         return zona;
     }
 
-    public void setZona(ArrayList<Zona> zona) {
+    public void setZona(Zona zona) {
         this.zona = zona;
     }
 }
