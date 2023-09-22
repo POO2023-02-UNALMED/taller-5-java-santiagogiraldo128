@@ -11,7 +11,9 @@ public class Animal {
     private String genero;
     private Zona zona;
 
-    public Animal() {}
+    public Animal() {
+        this(null,0,null,null);
+    }
     public Animal (String nombre, int edad, String habitat, String genero) {
         this.nombre = nombre;
         this.edad = edad;
