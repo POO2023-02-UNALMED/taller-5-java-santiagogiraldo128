@@ -24,18 +24,17 @@ public class Animal {
         return "desplazarse";
     }
     public static String totalPorTipo () {
-        int cantMamifero=Mamifero.getListado().size();
-        int cantAve=Ave.getListado().size();;
-        int cantReptil=Reptil.getListado().size();;
-        int cantPez=Pez.getListado().size();;
-        int cantAnfibio=Anfibio.getListado().size();;
+        int cantmamifero=Mamifero.getListado().size();
+        int cantave=Ave.getListado().size();;
+        int cantreptil=Reptil.getListado().size();;
+        int cantpez=Pez.getListado().size();;
+        int cantanfibio=Anfibio.getListado().size();;
 
-        return "Mamiferos: "+cantMamifero+"\n"+
-                "Aves: "+cantAve+"\n"+
-                "Reptiles: "+cantReptil+"\n" +
-                "Peces: " +cantPez+"\n"+
-                "Anfibios: "+cantAnfibio;
-
+        return "Mamiferos: "+cantmamifero+"\n"+
+                "Aves: "+cantave+"\n"+
+                "Reptiles: "+cantreptil+"\n" +
+                "Peces: " +cantpez+"\n"+
+                "Anfibios: "+cantanfibio;
 
     }
     @Override
