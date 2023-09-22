@@ -40,13 +40,12 @@ public class Animal {
     }
     @Override
     public String toString() {
-        String cadena = "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en" + this.habitat +
-                " y mi genero es " + this.genero;
-        if (this.zona != null) {
-            cadena = cadena + ", la zona en la que me ubico es " + this.zona.getNombre() + " en el zoo" +
-                    this.zona.getZoo().getNombre();
+        if (getZona()!=null) {
+            return "Mi nombre es "+ getNombre()+", tengo una edad de " +getEdad()+ ", habito en "+getHabitat()+" y mi genero es "+getGenero()+", la zona en la que me ubico es "+getZona().getNombre()+", en el "+getZona().getZoo().getNombre();
         }
-        return cadena;
+        else {
+            return "Mi nombre es "+ getNombre()+", tengo una edad de " +getEdad()+ ", habito en "+getHabitat()+" y mi genero es "+getGenero();
+        }
     }
 
     public int getTotalAnimales() {
