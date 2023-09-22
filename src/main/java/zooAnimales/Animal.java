@@ -35,7 +35,6 @@ public class Animal {
                 "Reptiles: "+cantreptil+"\n" +
                 "Peces: " +cantpez+"\n"+
                 "Anfibios: "+cantanfibio;
-
     }
     @Override
     public String toString() {
